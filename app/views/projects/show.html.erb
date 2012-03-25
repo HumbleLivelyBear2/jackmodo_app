@@ -1,0 +1,91 @@
+<br>
+<br>
+
+
+
+<% content_for :body_content_left do %>
+  
+
+  
+
+<% end %>
+
+
+<%= render :partial => "/shared/content_page" %>
+
+	<div id="content_wrap">
+    	<div id="content">
+    		<p class="h_title"><%= @project.case_name %> - 木匠兄妹</p>
+    		<p class="h_desc">木工人生創意生活。</p>
+
+    <div class="c_left">  
+        <p class="c_title">
+            <div class="productTitle">
+            <div class="i_unit"></div><span class="bigText">關於這件商品<span class="smallText">Product</span></span>
+            </div>
+        </p>
+        
+        <p class="c_desc">
+		<%= image_fu @project.case_promote_photo, '400x300' %>
+        <!-- <img src="images/up.jpg" alt=""> -->
+         <%=raw @project.case_introduce %>   <!-- test here-->
+        </p>
+	
+        <!-- <p class="c_title">
+                    <div class="productTitle">
+                    <div class="i_unit"></div>
+                    <span class="bigText">關於羅翊宸<span class="smallText">Designer</span></span>
+                    </div>
+                </p>
+            
+                <p class="c_desc">
+                羅翊宸，綽號Howard，1978年次，台中人、木工創作者、設計師，現今主要從事攝影創作。<br>
+                
+                </p>
+                
+                <p class="c_desc"></p> -->
+
+    </div>
+ 
+    <div class="c_right">
+    
+        <div class="bannerContent2">
+            <ul>
+                <li class="orderTitle"><span></span><%= @project.case_name %></li>
+                <li class="orderDiscribe">by 木匠兄妹 on Mar 2, 2012</li>
+                <li class="leftLine"></li>
+                <li class="orderDate"><span>21</span></li>
+                <li class="blue2">$5500</li><li class="targetPrice">目標$12500</li>
+                <li class="timeN"><span>剩餘 2 天</span></li>
+            </ul>
+        </div>
+     
+       
+        <form action="https://www.paypal.com/" method="post" class="supporting">
+        <a class="pay"href="1/support">
+            <div class="backop">
+                <div class="b_title">我要預購!!</div>
+            </div>
+        </a>
+        <img alt="" border="0" src="images/pixel.gif" width="1" height="1">
+        </form>
+       
+
+        <p class="c_title">發起者</p>
+        
+        <div class="funder">
+            <%= image_tag("CarpenterBrother.jpg")%>
+            木匠兄妹<br>
+            <a href="http://www.carpenter.com.tw/index.php" target="_blank">Website</a><br>
+            <a href="http://www.facebook.com/carpenter.tw" target="_blank">Facebook</a><br>
+            <div class="clear"></div>
+            木工創作者, 因為不忍心看父親留下的木工廠廢棄, 因而兄妹攜手, 希望能打造出木匠的理想天地. 
+        </div>
+            <a class="button" id="question" href="#">我有問題</a>
+            <a class="button" id="facebook">Facebook 分享</a>
+    </div>
+    
+    <div class="clear"></div>
+    </div>
+</div>
+

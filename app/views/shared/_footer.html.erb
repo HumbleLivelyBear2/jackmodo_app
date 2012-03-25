@@ -1,0 +1,21 @@
+<!-- <p>
+  <%= t('.copyright', :year => Time.now.year,
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+</p> -->
+
+<div class="bottomFrmae">
+  <ul class="menuFrame">
+      <li><%= link_to "關於我們", about_path %></li>
+      <li class="menuline">│</li>
+      <li><%= link_to "如何發起專案", howlaunch_path %></li>
+      <li class="menuline">│</li>
+	  <li><%= link_to "如何預購", howbuy_path %></li>
+      <li class="menuline">│</li>
+      <li><%= link_to "聯絡我們", contact_path %></li>
+      <li class="menuline">│</li>
+      <li><%= link_to "服務條款", service_path %></li>
+      <li class="menuline">│</li>
+      <li><%= link_to "隱私權政策", privacy_path %></li>
+  </ul>
+	<div class="logo"></div>
+</div>

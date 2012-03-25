@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @payment.status %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Params</h1>
+    <p>
+      <%=raw @payment.params %>
+    </p>
+  </section>
+  <section>
+    <h1>Cart</h1>
+    <p>
+      <%=raw @payment.cart_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @payment.status %>
+    </p>
+  </section>
+  <section>
+    <h1>Transaction</h1>
+    <p>
+      <%=raw @payment.transaction_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="payments">
+      <% @payments.each do |payment| %>
+        <li>
+          <%= link_to payment.status, payment_path(payment) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

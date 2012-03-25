@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("reset.css");
+body{margin: 0;padding: 0;border: 0;overflow: hidden;height: 100%; max-height: 100%; }
+
+#framecontent{position: absolute; top: 0; left: 0; width: 100%; height: 67px; /*Height of frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/ background:url(../images/top_bg.jpg);color white;}
+
+#maincontent{position: fixed; top: 67px; /*Set top value to HeightOfFrameDiv*/left: 0;right: 0;bottom: 0;overflow: auto; background:url(../images/contentBg.jpg);}
+
+.innertube{/*Margins for inner DIV inside each DIV (to provide padding)*/}
+
+* html body{ /*IE6 hack*/padding: 130px 0 0 0; /*Set value to(HeightOfFrameDiv 0 0 0)*/}
+
+* html #maincontent{ /*IE6 hack*/height: 100%; width: 100%; }
+
+.titleFrame{ position:relative; display:block; margin:0 auto; width:1000px; }
+.facebooklogo a{ position:absolute; right:10px; top:15px; line-height:30px; height:30px; background:url(../images/facebookLogo.jpg) no-repeat; width:65px; text-indent:35px; color:#2f518d; font-size:13px; text-decoration:none; font-weight:bold;}
+.facebooklogo a:hover{ color:#036; text-decoration:underline; }
+.title_1bn a{ color:#333333; font-size:14px; font-weight:bold; position:absolute; line-height:18px; text-decoration:none;  right:85px; border-right:1px solid #999; padding-right:10px; top:22px;}
+.title_1bn a:hover{ color:#036; text-decoration:underline; }
+
+.title_2bn a{ color:#333333; font-size:14px; font-weight:bold; position:absolute; line-height:18px; text-decoration:none;  right:165px; border-right:1px solid #999; padding-right:10px;top:22px;}
+.title_2bn a:hover{ color:#036; text-decoration:underline; }
+.bannerBottom{ display:block; margin:0 auto; background:url(../images/banner_BG.jpg); height:30px; width:900px;}
+.bannerContent{position:absolute; border:1px #c2c0bd solid; width:230px; height:325px; left:60px; background:url(../images/bannerLeftBg.png);}
+.bannerContent ul li{ display:block; padding:8px;}
+.orderTitle{ font-size:14px; font-weight:bold; color:#000; text-indent:12px;}
+.orderTitle span{ background:url(../images/block.jpg); position:absolute; width:5px; height:16px; top:12px; left:8px; }
+.orderDiscribe{ font-size:9px; color:#333; margin-top:-15px;}
+.leftLine{ background:url(../images/bannerLine.png) no-repeat; width:213px; height:5px; display:block;}
+.orderDate{ display:block; background:url(../images/bannerNumber.png) no-repeat; width:213px; height:125px;}
+
+.orderDate span{ font-size:60px; font-weight:bolder; color:#454545; text-align:center; width:213px; display:block;}
+.blue{width:213px; display:block; font-size:36px; color:#04719a; font-weight:bold; text-align:center; margin-top:-35px;}
+.targetPrice{ text-align:center; color:#000; font-size:16px; font-weight:bold;margin-top:-25px;}
+
+.timeN{ background:url(../images/timeImg.png) no-repeat; width:213px; height:68px;margin-top:-15px;}
+
+.timeN span{ text-align:center; color:#454545; font-size:16px; font-weight:bold; margin-top:25px; display:block;}
+
+.allFrame{ display:block; width:900px; margin:0 auto;}
+
+ul.products li{ float:left; display:block; width:265px; margin-right:10px; margin-left:10px;}
+.productTitle{ position:relative; font-size:14px; display:block; width:100%; height:19px; line-height:20px;}
+.productTitle img{ margin-top:2px;}
+.productTitle span.bigText{ position:absolute;margin-top:1px;}
+.smallText{ font-size:7px; color:#494949; margin-left:2px;}
+
+.whiteFrame{ position:relative; display:block; border:1px #d7d6d3 solid; width:260px; height:260px; margin-top:15px;}
+.sTop{ position:absolute; background:url(../images/i_s.png); width:17px; height:12px; top:-10px; left:5px; }
+.productPic{ position:absolute; width:240px; height:220px; background:#999; left:10px; top:10px;}
+.ishare{ position:absolute; bottom:4px; right:5px; width:69px; height:19px;}
+.proudctBottom{ position:absolute; bottom:-6px; background:url(../images/productLine.png); width:265px; height:6px;}
+.orderTitle2{ font-size:14px; font-weight:bold; color:#000; }
+.orderDiscribe2{ font-size:9px; color:#333; }
+.contentP{ font-size:11px; display:block; padding:10px; line-height:11px;}
+.statusFrame{ display:block; width:240px; margin:0 auto; height:53px; background:#e4e4e4;}
+.statusFrame td{ text-indent:5px;}
+.sblue{font-size:14px; color:#04719a; font-weight:bold; text-align:center; margin-top:-35px;}
+.productLine{ position:relative;display:block; background:url(../images/productS.png); width:900px; height:44px; margin:0 auto; margin-top:20px;}
+.bottomFrmae{ position:relative;display:block; width:100%; background:url(../images/bottomBg.png); height:80px; margin-top:15px;}
+ul.menuFrame{ position: absolute; top:40px; left:20px;}
+ul.menuFrame li{ float:left; display:block; margin:0px 6px; }
+ul.menuFrame li a{font-size:12px; color:#CCC;  text-decoration:none;}
+ul.menuFrame li a:hover{ color:#09C; text-decoration:underline;}
+.menuline{ color:#fff;}
+.logo{ position:absolute; right:15px; top:32px; background:url(../images/logo.png); width:96px; height:38px;}
