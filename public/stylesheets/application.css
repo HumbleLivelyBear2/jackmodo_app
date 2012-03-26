@@ -304,10 +304,92 @@ box-shadow: #666 0px 2px 3px; background:url(/images/money.png);
 behavior: url(/PIE.htc);
 }
 
+/* Contact Form */
+
+#contact label {
+	display:block;
+	padding:5px 0;
+}
+
+#contact input, #contact textarea {
+	border:1px solid #ddd;
+	padding:8px;
+	width:300px;
+	margin-bottom:10px;
+   -moz-border-radius:4px;
+   -webkit-border-radius:4px;
+}
+
+
+#contact textarea {
+	width:560px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+#contact input[type="submit"]{
+	border:none;
+	width:151px;
+	height:32px;
+	margin-top:10px;
+	cursor:pointer;
+	color:#FFF;
+	font-size:12px;
+	padding:0;
+	-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 6px #000000;
+-webkit-box-shadow: 0px 0px 6px #000000;
+box-shadow: 0px 0px 6px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#6e6e6e', endColorstr = '#000000');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#6e6e6e', endColorstr = '#000000')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #6e6e6e, #000000);
+background-image: -ms-linear-gradient(top, #6e6e6e, #000000);
+background-image: -o-linear-gradient(top, #6e6e6e, #000000);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#6e6e6e), to(#000000));
+background-image: -webkit-linear-gradient(top, #6e6e6e, #000000);
+background-image: linear-gradient(top, #6e6e6e, #000000);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+
+.errormsg, .successmsg{
+	background:#FEF4F1;
+	border:1px solid #F7A68A;
+	color:#DA4310;
+	padding:10px;
+	-moz-border-radius:4px;
+   -webkit-border-radius:4px;
+}
+
+.successmsg {
+	background:#F5FAF1;
+	border:1px solid #C2E1AA;
+	color:#8FA943;
+	-moz-border-radius:4px;
+   -webkit-border-radius:4px;
+}
+
+?#header{z-index:1001 !important;}
+#content{z-index:100 !important;}
+
+
 /* default.css, theme*/
 .theme-default .nivoSlider {
 	position:relative;
-	background:#fff url(loading.gif) no-repeat 50% 50%;
+	background:#fff url(/stylesheets/loading.gif) no-repeat 50% 50%;
     margin-bottom:50px;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -334,7 +416,7 @@ behavior: url(/PIE.htc);
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(bullets.png) no-repeat;
+	background:url(/stylesheets/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -348,7 +430,7 @@ behavior: url(/PIE.htc);
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(arrows.png) no-repeat;
+	background:url(/stylesheets/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }
@@ -2167,17 +2249,6 @@ body .ui-toolip-error .ui-tooltip-content {
   
  @font-face {font-family: 'SecondaSoft-Medium';src: url('/stylesheets/common/webfonts/1F04AF_1_0.eot');src: url('/stylesheets/common/webfonts/1F04AF_1_0.eot?#iefix') format('embedded-opentype'),url('/stylesheets/common/webfonts/1F04AF_1_0.woff') format('woff'),url('/stylesheets/common/webfonts/1F04AF_1_0.ttf') format('truetype');}
  
-
-label {
-  width: 150px;
-  line-height: 30px;
-  margin-right: 20px;
-  text-align: right;
-  font-size: 14px;
-  color: #666;
-  display: block;
-  margin-bottom: 2px; 
-}
 
 label .prefix {
   font-size: 20px;
