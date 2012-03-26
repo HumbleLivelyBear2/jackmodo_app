@@ -2148,6 +2148,18 @@ body .ui-toolip-error .ui-tooltip-content {
   margin-bottom:20px;
 }
 
+label.newlabel {
+	width: 150px;
+	line-height: 30px;
+	margin-right: 20px;
+	text-align: right;
+	font-size: 14px;
+	color: #666;
+	display: block;
+	margin-bottom: 2px;
+}
+
+
 .contribute-review-field{
   margin-left:25px;
 }
@@ -2966,6 +2978,9 @@ section .heading {
 .campaign-category {
   padding-bottom: 0;
 }
+
+
+
 
 .campaign-category label {
   width: 211px;
