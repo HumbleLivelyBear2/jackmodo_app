@@ -6,7 +6,7 @@ set :application, "jackmodo_app"
 set :branch, "master"
 set :repository,  "git@github.com:HumbleLivelyBear2/jackmodo_app.git"
 set :scm, "git"
-set :user, "apps" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
+set :user, "root" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
 set :port, "22"
 
 set :deploy_to, "/home/apps"

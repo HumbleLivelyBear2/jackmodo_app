@@ -16,18 +16,18 @@
 	<div id="content_wrap">
     	<div id="content">
     		<p class="h_title"><%= @project.case_name %> - 木匠兄妹</p>
-    		<p class="h_desc">木工人生創意生活。</p>
+    		<p class="h_desc">預購價NT$300</p>
 
     <div class="c_left">  
         <p class="c_title">
             <div class="productTitle">
-            <div class="i_unit"></div><span class="bigText">關於這件商品<span class="smallText">Product</span></span>
+            <div class="i_unit"></div><span class="bigText">關於這件商品</span>
             </div>
         </p>
         
         <p class="c_desc">
-		<%= image_fu @project.case_promote_photo, '400x300' %>
-        <!-- <img src="images/up.jpg" alt=""> -->
+		<!-- <%= image_fu @project.case_promote_photo, '400x300' %> -->
+        <!-- <img src="" alt=""> -->
          <%=raw @project.case_introduce %>   <!-- test here-->
         </p>
 	
